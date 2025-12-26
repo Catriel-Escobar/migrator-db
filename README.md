@@ -16,6 +16,19 @@ Librería simple y robusta para manejar migraciones de base de datos en Go con s
 go get github.com/catriel-escobar/migrator
 ```
 
+**Importante**: También necesitas instalar el driver de tu base de datos:
+
+```bash
+# PostgreSQL
+go get github.com/lib/pq
+
+# MySQL
+go get github.com/go-sql-driver/mysql
+
+# SQLite
+go get github.com/mattn/go-sqlite3
+```
+
 ## Uso Básico
 
 ### 1. Configurar Variables de Entorno

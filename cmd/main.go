@@ -6,12 +6,12 @@ import (
 	"log"
 	"os"
 
-	_ "github.com/go-sql-driver/mysql"
-	"github.com/jmoiron/sqlx"
-	_ "github.com/lib/pq"
-	_ "github.com/mattn/go-sqlite3"
-
 	"github.com/catriel-escobar/migrator-db/migrate"
+	"github.com/jmoiron/sqlx"
+	// IMPORTANTE: Importa el driver que necesites comentando/descomentando:
+	// _ "github.com/lib/pq"                 // PostgreSQL
+	// _ "github.com/go-sql-driver/mysql"    // MySQL
+	// _ "github.com/mattn/go-sqlite3"       // SQLite
 )
 
 func main() {
