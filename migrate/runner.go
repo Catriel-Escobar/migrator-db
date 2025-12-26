@@ -12,7 +12,7 @@ import (
 func Up(db *sqlx.DB, dir string, dryRun bool) error {
 	if dryRun {
 		fmt.Println("\n=== MODO DRY-RUN ACTIVADO ===")
-		fmt.Println("No se realizarán cambios en la base de datos\n")
+		fmt.Println("No se realizarán cambios en la base de datos")
 	}
 
 	// En dry-run no necesitamos lock
@@ -61,7 +61,7 @@ func Up(db *sqlx.DB, dir string, dryRun bool) error {
 			fmt.Println("\nContenido SQL:")
 			fmt.Println("---")
 			fmt.Println(m.UpSQL)
-			fmt.Println("---\n")
+			fmt.Println("---")
 			continue
 		}
 
@@ -106,7 +106,7 @@ func Up(db *sqlx.DB, dir string, dryRun bool) error {
 func Down(db *sqlx.DB, dir string, dryRun bool) error {
 	if dryRun {
 		fmt.Println("\n=== MODO DRY-RUN ACTIVADO ===")
-		fmt.Println("No se realizarán cambios en la base de datos\n")
+		fmt.Println("No se realizarán cambios en la base de datos")
 	}
 
 	// En dry-run no necesitamos lock
@@ -187,7 +187,7 @@ func Down(db *sqlx.DB, dir string, dryRun bool) error {
 func DownN(db *sqlx.DB, dir string, steps int, dryRun bool) error {
 	if dryRun {
 		fmt.Println("\n=== MODO DRY-RUN ACTIVADO ===")
-		fmt.Println("No se realizarán cambios en la base de datos\n")
+		fmt.Println("No se realizarán cambios en la base de datos")
 	}
 
 	if steps < 1 {
@@ -255,7 +255,7 @@ func DownN(db *sqlx.DB, dir string, steps int, dryRun bool) error {
 			fmt.Println("\nContenido SQL:")
 			fmt.Println("---")
 			fmt.Println(target.DownSQL)
-			fmt.Println("---\n")
+			fmt.Println("---")
 			continue
 		}
 
