@@ -1,4 +1,4 @@
-module github.com/catriel-escobar/migrator
+module github.com/catriel-escobar/migrator-db
 
 go 1.25.4
 

@@ -11,7 +11,7 @@ import (
 	_ "github.com/lib/pq"
 	_ "github.com/mattn/go-sqlite3"
 
-	"github.com/catriel-escobar/migrator/migrate"
+	"github.com/catriel-escobar/migrator-db/migrate"
 )
 
 func main() {
