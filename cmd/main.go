@@ -8,10 +8,11 @@ import (
 
 	"github.com/catriel-escobar/migrator-db/migrate"
 	"github.com/jmoiron/sqlx"
-	// IMPORTANTE: Importa el driver que necesites comentando/descomentando:
-	// _ "github.com/lib/pq"                 // PostgreSQL
-	// _ "github.com/go-sql-driver/mysql"    // MySQL
-	// _ "github.com/mattn/go-sqlite3"       // SQLite
+
+	// Importar drivers de base de datos
+	_ "github.com/go-sql-driver/mysql" // MySQL
+	_ "github.com/lib/pq"              // PostgreSQL
+	_ "github.com/mattn/go-sqlite3"    // SQLite
 )
 
 func main() {
